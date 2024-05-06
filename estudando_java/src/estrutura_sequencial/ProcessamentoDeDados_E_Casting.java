@@ -67,13 +67,13 @@ public class ProcessamentoDeDados_E_Casting {
 		/*double num5;
 		int num6;
 		num5 = 50.0;
-		num6 =num5;
+		num6 =num5; ,//
 		System.out.println(num6);  */ //Vai dar erro pois o compilador acha que iremos perder informação ai temos que usar um casting
 		
 		double num5;
 		int num6;
 		num5 = 5.0;
-		num6 = (int) num5;
+		num6 = (int) num5; //usando casting avisamos o compilador q n importa as casas decimais 
 		System.out.println(num6);
 		
 		
