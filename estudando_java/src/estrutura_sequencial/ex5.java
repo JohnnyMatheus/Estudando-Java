@@ -33,10 +33,10 @@ public class ex5 {
 		double calc1 = (double)numeroPecas1*valorUnitario1;
 		double calc2 = (double)numeroPecas2*valorUnitario2;
 		double valorTotal = calc1+calc2;
-		
+		Locale.setDefault(Locale.US);
 		System.out.printf("VALOR A PAGAR: R$ %.2f",valorTotal);
 		
-		
+		sc.close();
 		
 	}
 
