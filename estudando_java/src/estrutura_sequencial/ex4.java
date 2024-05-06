@@ -16,7 +16,7 @@ public class ex4 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc = new Scanner(System.in);
-		
+
 		int numFuncionario, horasTrabalhadas;
 		double valorHora, salario;
 
@@ -30,7 +30,7 @@ public class ex4 {
 		System.out.println("Número = " + numFuncionario);
 		Locale.setDefault(Locale.US);
 		System.out.printf("Salário R$ = %.2f", salario);
-
+		sc.close();
 	}
 
 }
