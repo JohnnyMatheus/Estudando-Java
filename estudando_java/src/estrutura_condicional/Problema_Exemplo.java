@@ -16,17 +16,17 @@ public class Problema_Exemplo {
 		Scanner sc = new Scanner(System.in);
 		Locale.setDefault(Locale.US);
 		double plano = 50.00;
-		double  minutoExcedido = 2.00;
+		double minutoExcedido = 2.00;
 		System.out.println("Informe a quantidade de minutos consumidos: ");
 		int qtdMinutos = sc.nextInt();
-		if(qtdMinutos == 100) {
-			System.out.println("Valor a pagar: R$"+plano);
-		}else {
-			double calc = (double)(qtdMinutos-100)*2.00;
-			System.out.printf("Valor a pagar: R$ %.2f",(calc+plano));
+		if (qtdMinutos <= 100) {
+			System.out.printf("Valor a pagar: R$ %.2f%n", plano);
+		} else {
+			double calc = (double) (qtdMinutos - 100) * minutoExcedido;
+			System.out.printf("Valor a pagar: R$ %.2f", (calc + plano));
 		}
-		
 
+		sc.close();
 	}
 
 }
