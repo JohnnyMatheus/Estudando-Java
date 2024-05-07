@@ -16,15 +16,15 @@ public class ex4 {
 		int horaInicial = sc.nextInt();
 		System.out.println("Hora Final");
 		int horaFinal = sc.nextInt();
-		
+
 		int duracao;
 		if (horaInicial < horaFinal) {
 			duracao = horaFinal - horaInicial;
 		} else {
-			duracao = 24 -horaInicial+horaFinal;
+			duracao = 24 - horaInicial + horaFinal;
 		}
 
-		System.out.printf("O JOGO DUROU %d HORA(S ", duracao);
+		System.out.printf("O JOGO DUROU %d HORA(S) ", duracao);
 
 	}
 
