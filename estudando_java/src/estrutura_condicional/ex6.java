@@ -27,7 +27,7 @@ public class ex6 {
 			System.out.println("Fora do intervalo");
 		}
 		
-		
+		System.out.println("teste");
 	}
 
 }
