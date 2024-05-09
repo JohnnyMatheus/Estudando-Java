@@ -1,4 +1,4 @@
-package estrutura_repetitiva;
+package estrutura_repetitiva_While;
 import java.util.Scanner;
 /*Escreva um programa que repita a leitura de uma senha até que ela seja válida. Para cada leitura de senha 
 incorreta informada, escrever a mensagem "Senha Invalida". Quando a senha for informada corretamente deve ser 
