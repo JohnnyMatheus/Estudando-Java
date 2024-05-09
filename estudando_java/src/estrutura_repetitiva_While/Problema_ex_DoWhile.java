@@ -20,7 +20,7 @@ public class Problema_ex_DoWhile {
 			double c = sc.nextDouble();
 			f = 9 * c / 5 + 32;
 			System.out.printf("Equivalente em Fahrenheit: %.1f%n", f);
-			System.out.println("Deseja continuar (s/n)");
+			System.out.println("Deseja continuar (s/n)?");
 			op = sc.next().charAt(0);
 		} while (op != 'n');
 		sc.close();
