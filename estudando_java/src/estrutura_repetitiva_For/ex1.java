@@ -13,7 +13,7 @@ public class ex1 {
 				System.out.println(i);
 			}
 		}
-
+		sc.close();
 	}
 
 }

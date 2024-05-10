@@ -22,7 +22,6 @@ public class Bitwise {
 		System.out.println(n1 & n2);
 		System.out.println(n1 | n2);
 		System.out.println(n1 ^ n2);
-
+		sc.close();
 	}
-
 }

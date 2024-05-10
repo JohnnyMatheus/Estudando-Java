@@ -1,14 +1,11 @@
 package funcoes_para_string;
 
-import java.util.Scanner;
-
 import javax.print.DocFlavor.INPUT_STREAM;
 
 public class FuncoesParaString {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner sc = new Scanner(System.in);
 		String original = "abcde FGHIJ ABC abc DEFG   ";
 		System.out.println("Original: " + original);
 		System.out.println();

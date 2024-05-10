@@ -4,11 +4,11 @@ public class Operacao_Split {
 
 	public static void main(String[] args) {
 		
-		 //SPLIT SERVE PARA RECORTAR UM STRING => RECEBE UM SEPARADOR E 
+		 //SPLIT SERVE PARA RECORTAR UM STRING => RECEBE UM SEPARADOR E cria vetor de string
 		
 		String nome =  "Johnny Matheus Nogueira de Medeiro";
 		
-		String[] vetor = nome.split(" ");
+		String[] vetor = nome.split(" "); //usando o espaço em branco como separador
 		String palavra1 = vetor[0];
 		String palavra2 = vetor[1];
 		String palavra3 = vetor[2];
