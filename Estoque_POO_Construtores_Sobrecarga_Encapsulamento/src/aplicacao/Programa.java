@@ -18,6 +18,11 @@ public class Programa {
 		System.out.print("Preço do Produto: ");
 		double preco = sc.nextDouble();
 		Produto produto = new Produto(nome,preco);
+		
+		produto.setNome("Computador");
+		System.out.println("ATUALIZADO: "+ produto.getNome());
+		produto.setPreco(1200);
+		System.out.println("ATUALIZADO: "+ produto.getPreco());
 
 		System.out.println("#DADOS DO PRODUTO");
 		System.out.println(produto.toString());
