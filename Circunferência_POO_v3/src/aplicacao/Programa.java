@@ -16,12 +16,12 @@ public class Programa {
 		// TODO Auto-generated method stub
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		Calcular calcular = new Calcular();
+		
 		System.out.print("Entre com valor do raio: ");
 		double raio = sc.nextDouble();
 
-		double c = calcular.circunferencia(raio);
-		double v = calcular.volume(raio);
+		double c = Calcular.circunferencia(raio);
+		double v = Calcular.volume(raio);
 
 		System.out.printf("Circunferência: %.2f%n", c);
 		System.out.printf("Volume: %.2f%n", v);
