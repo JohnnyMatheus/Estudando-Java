@@ -37,6 +37,10 @@ public class Produto {
 	public void setPreco(double preco) {
 		this.preco = preco;
 	}
+	public int getQuantidade() {
+		return quantidade;
+	}
+	
 
 	public double ValorTotalEstoque() {
 		return preco * quantidade;
