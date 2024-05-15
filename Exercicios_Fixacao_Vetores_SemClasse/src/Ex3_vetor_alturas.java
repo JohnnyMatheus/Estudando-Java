@@ -19,7 +19,13 @@ public class Ex3_vetor_alturas {
 		double[] altura = new double[n];
 
 		for (int i = 0; i < n; i++) {
-
+			System.out.printf("%d°Nome: ", i + 1);
+			sc.nextLine();
+			nome[i] = sc.nextLine();
+			System.out.printf("%d°Idade: ", i + 1);
+			idade[i] = sc.nextInt();
+			System.out.printf("%d°Altura: ", i + 1);
+			altura[i] = sc.nextDouble();
 		}
 
 	}
