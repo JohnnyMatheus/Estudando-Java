@@ -17,7 +17,7 @@ import entidade.Funcionario;
  * Lembre-se de aplicar a técnica de encapsulamento para não permitir que o saário possa ser mudado
  * livremente . Um salário só pode ser aumentado com base em uma operação de aumento por porcentagem dada.
  */
-public class Programa {
+public class Programa2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -32,6 +32,11 @@ public class Programa {
 			System.out.println("Funcionário #" + (i + 1) + ":");
 			System.out.print("Código: ");
 			Integer codigo = sc.nextInt();
+			while(verificaCodigo(lista, codigo)) {
+				System.out.println("Esse código já existe");
+				codigo =sc.nextInt();
+			}
+			
 			System.out.print("Nome: ");
 			sc.nextLine();
 			String nome = sc.nextLine();
@@ -45,22 +50,21 @@ public class Programa {
 		System.out.print("Entre com o codigo do funcionario que tera aumento salarial: ");
 		int codigoSalario = sc.nextInt();
 		
-		Integer pos = posicao(lista, codigoSalario);
-		if(pos == null) {
+		Funcionario  funcionario= lista.stream().filter(codigo -> codigo.getCodigo() == codigoSalario).findFirst().orElse(null);
+		
+		if (funcionario == null) {
 			System.out.println("Este Codigo não existe");
-		}else {
+		} else {
 			System.out.print("Entre com a porcentagem ");
 			double porcentagem = sc.nextDouble();
-			lista.get(pos).aumentoSalario(porcentagem);
-			
+			funcionario.aumentoSalario(porcentagem);
+
 		}
 		System.out.println("Lista de funcionários");
-		for(Funcionario funcionario:lista) {
-			System.out.println(funcionario);
+		for (Funcionario funcionarios : lista) {
+			System.out.println(funcionarios);
 		}
-		
-		
-		
+
 		sc.close();
 	}
 
@@ -71,6 +75,11 @@ public class Programa {
 			}
 		}
 		return null;
+	}
+
+	public static boolean verificaCodigo(List<Funcionario> lista, int codigo) {
+		Funcionario funcionario = lista.stream().filter(x -> x.getCodigo() == codigo).findFirst().orElse(null);	
+		return funcionario != null;
 	}
 
 }
